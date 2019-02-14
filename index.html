@@ -109,6 +109,15 @@
             height: 12px;
             
         } */
+        .website-mask{
+            /* display: none; */
+            height: 100%;
+            width: 100%;
+            background: #eee;
+        }
+        .website-mask.active{
+            display: block;
+        }
         
     </style>
 </head>
@@ -116,6 +125,9 @@
 <body>
     <!-- <div class="yinyang"></div>  -->
     <!-- 顶部 -->
+    <div class="website-mask active">
+        <div class="loadding"></div>
+    </div> 
     <header class="clearfix">
         <div class="logo">
             <span>RS</span>  

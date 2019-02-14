@@ -8,7 +8,7 @@
     <title>罗婵的简历</title>
     <!-- <link rel="stylesheet" href="/css/style.css"> -->
     <style>
-            body {
+        body {
             background: #eee;
             color: #000;
             margin: 0;
@@ -18,17 +18,19 @@
             text-decoration: none;
             color: white
         }
-        ul{
+
+        ul {
             list-style: none;
             padding-inline-start: 0
         }
+
         .logo {
             font-size: 30px;
             font-family: 'Arial Black';
         }
 
         header {
-            padding: 0 16px;
+            padding: 5px 16px;
             box-sizing: border-box;
             position: fixed;
             width: 100%;
@@ -59,7 +61,8 @@
             padding: 0 17px;
             border-bottom: 3px solid transparent;
         }
-        nav>ul>li>a::after{
+
+        nav>ul>li>a::after {
             position: absolute;
             content: '';
             display: block;
@@ -70,7 +73,7 @@
             left: 0;
         }
 
-        nav>ul>li:hover>a::after {
+        nav>ul>li.active>a::after,nav>ul>li.highlight>a::after {
             width: 100%;
             background: #d96f6f;
             height: 3px;
@@ -78,9 +81,10 @@
         }
 
         nav>ul>li>a {
-            position: relative;;
+            position: relative;
             padding-bottom: 10px;
-            color: rgba(255, 255, 255, 0.7);
+            color: rgba(255, 255, 255, 0.5);
+
         }
 
         .banner {
@@ -100,8 +104,8 @@
             width: 930px;
             box-sizing: border-box;
             background: #fff;
-            margin: -335px auto 0; 
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            margin: -335px auto 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
         .intro .my-picture {
@@ -174,7 +178,8 @@
             padding: 5px 0;
             color: #9da0a7
         }
-        .download-btn{
+
+        .download-btn {
             width: 280px;
             border: 1px solid #e5e5e5;
             font-size: 16px;
@@ -183,27 +188,32 @@
             margin: 30px auto 0;
             transition: all 0.5s;
         }
-        .download-btn:hover{
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+        .download-btn:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             transition: all 0.5s;
         }
-        .download-btn a{
+
+        .download-btn a {
             color: #000;
             font-weight: bold;
         }
-        .section-title{
-        	font-size: 20px;
-        	text-align: center;
-        	font-weight: bold;
-        	display: block
+
+        .section-title {
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+            display: block
         }
-        .about-me{
+
+        .about-me {
             font-size: 18px;
             font-family: "kai";
             text-align: center;
             margin-top: 30px
         }
-        .pro-list{
+
+        .pro-list {
             width: 830px;
             background: white;
             padding: 40px 50px 10px;
@@ -211,43 +221,53 @@
             display: flow-root;
 
         }
-        .pro-list-text{
+
+        .pro-list-text {
             margin-bottom: 4px;
         }
-        .pro-list .bg-item{
+
+        .pro-list .bg-item {
             width: 100%;
             height: 5px;
             background: #f7e2e2;
         }
-        .pro-list li{
+
+        .pro-list li {
             width: 46%;
             float: left;
             display: block;
             margin-bottom: 40px;
         }
-        .pro-list li:nth-child(even){
+
+        .pro-list li:nth-child(even) {
             float: right;
         }
-        .pro-list .bg-item .percent{
+
+        .pro-list .bg-item .percent {
             width: 20%;
             height: 100%;
             background: #d96f6f;
+            transition: all 1s;
         }
-        .section-title{
+
+        .section-title {
             margin: 80px 0 40px;
         }
-        .part-two{
+
+        .part-two {
             position: relative;
             padding-bottom: 50px
         }
-        .part-two ul{
+
+        .part-two ul {
             height: 37px;
             position: absolute;
             text-align: center;
             left: 50%;
             transform: translateX(-50%);
         }
-        .part-two ul>li:nth-child(1)::after{
+
+        .part-two ul>li:nth-child(1)::after {
             position: absolute;
             left: 0;
             bottom: -3px;
@@ -257,7 +277,8 @@
             height: 3px;
             display: block;
         }
-        .part-two ul>li{
+
+        .part-two ul>li {
             position: relative;
             float: left;
             padding-right: 10px;
@@ -266,16 +287,19 @@
             cursor: pointer;
 
         }
-        .part-two ul>li:nth-last-child(){
+
+        .part-two ul>li:nth-last-child() {
             padding-right: 0
         }
-        .part-two>.portfolio-box{
+
+        .part-two>.portfolio-box {
             height: 573px;
             width: 908px;
             position: relative;
             margin: 30px auto 0;
         }
-        .part-two .portfolio-1{
+
+        .part-two .portfolio-1 {
             width: 600px;
             height: 100%;
             position: absolute;
@@ -285,7 +309,8 @@
             background-position: center center;
             background: url('https://rscard.px-lab.com/startuper/wp-content/uploads/sites/2/2015/12/photo-1422480041422-130238c67fe2-1-2-2-1-1-607x576.jpg')
         }
-        .part-two .portfolio-2{
+
+        .part-two .portfolio-2 {
             width: 287px;
             height: 270px;
             right: 0;
@@ -295,7 +320,8 @@
             background-position: center center;
             background: url('https://rscard.px-lab.com/startuper/wp-content/uploads/sites/2/2015/12/kaboompics-1-2-1-1-294x278.jpg')
         }
-        .part-two .portfolio-3{
+
+        .part-two .portfolio-3 {
             width: 287px;
             position: absolute;
             height: 270px;
@@ -305,6 +331,7 @@
             background-position: center center;
             background: url('https://rscard.px-lab.com/startuper/wp-content/uploads/sites/2/2015/12/photo-1421757295538-9c80958e75b0-2-2-1-1-294x278.jpg')
         }
+
         footer {
             height: 55px;
             padding: 30px 0 15px 0;
@@ -359,11 +386,143 @@
             overflow: hidden;
             padding-bottom: 2px;
         }
+
+        .website-mask {
+            display: none;
+            height: 100%;
+            width: 100%;
+            background: #eee;
+            position: fixed;
+            z-index: 2;
+
+        }
+
+        .website-mask.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .website-mask .loadding {
+            position: relative;
+        }
+
+        .website-mask .loadding::before,
+        .website-mask .loadding::after {
+            content: '';
+            height: 80px;
+            width: 80px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            display: block;
+            animation: ani 2s linear infinite;
+            background: #999;
+            border-radius: 50%;
+        }
+
+        .website-mask .loadding::after {
+            animation-delay: 0.5s;
+        }
+
+        @keyframes ani {
+            from {
+                transform: scale(0);
+                opacity: 1;
+            }
+            to {
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
+
+        .sticky {
+            background: #fff;
+            z-index: 1;
+            padding: 0px 16px;
+            box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+            transition: all 1s;
+
+        }
+
+        .sticky>nav>ul>li>a {
+            color: #b7b7b7;
+        }
+
+        nav>ul>li {
+            position: relative;
+        }
+
+        nav>ul>li>.menu {
+            display: none;
+        }
+
+        nav>ul>li.active .menu {
+            display: block;
+        }
+
+        .menu {
+            position: absolute;
+            margin-right: 17px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            right: 0%;
+            padding: 10px;
+            cursor: pointer;
+            top: 36px;
+            color: #666666;
+            top: 27px;
+            animation: menuAni 0.5s;
+
+        }
+
+        @keyframes menuAni {
+            from {
+                margin-right: 60%;
+            }
+            to {
+                margin-right: 17px;
+            }
+        }
+
+        .menu.active {
+            display: block;
+        }
+
+        .menu>li {
+            white-space: nowrap
+        }
+        [data-x].offset{
+            transform: translateY(100px);
+            /* transition: all 0.5s; */
+        }
+        [data-x]{
+            transform: translateY(0px);
+            transition: all 0.5s
+            /* animation: tranAni 0.5s; */
+        }
+        /* @keyframes tranAni{
+            0%{
+                transform: translateY(80px)
+            }
+            100%{
+                transform: translateY(0);
+            }
+        } */
+        [data-x].offset>.pro-list .bg-item .percent{
+            width: 0%;
+        }
     </style>
     <script src="//at.alicdn.com/t/font_988928_qj25n3h32f.js"></script>
 </head>
 
 <body>
+    <div class="website-mask active" id="website-mask">
+        <div class="loadding"></div>
+    </div>
     <!-- 顶部 -->
     <header class="clearfix">
         <div class="logo">
@@ -372,25 +531,40 @@
         </div>
         <nav>
             <ul class="clearfix">
-                <li>
-                    <a href="#">关于</a>
+                <li class='menuToggle'>
+                    <a href="#about">关于</a>
                 </li>
-                <li>
-                    <a href="#">技能</a>
+                <li class='menuToggle'>
+                    <a href="#skills">技能</a>
+                    <ul class="menu">
+                        <li>技能一</li>
+                        <li>技能二</li>
+                        <li>技能三</li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="#">作品</a>
+                <li class='menuToggle'>
+                    <a href="#works">作品</a>
+                    <ul class="menu">
+                        <li>作品一</li>
+                        <li>作品二</li>
+                        <li>作品三</li>
+                    </ul>
                 </li>
-                <li>
+                <li class='menuToggle'>
                     <a href="#">博客</a>
+                    <ul class="menu">
+                        <li>博客一</li>
+                        <li>博客二</li>
+                        <li>博客三</li>
+                    </ul>
                 </li>
-                <li>
+                <li class='menuToggle'>
                     <a href="#">日历</a>
                 </li>
-                <li>
+                <li class='menuToggle'>
                     <a href="#">联系方式</a>
                 </li>
-                <li>
+                <li class='menuToggle'>
                     <a href="#">其他</a>
                 </li>
             </ul>
@@ -400,7 +574,7 @@
         <div class="mask"></div>
     </div>
     <!-- 主干 -->
-    <main class="intro ">
+    <main class="intro" id="about" data-x>
         <div class="clearfix info-box">
             <div class="my-picture">
                 <img src="https://rscard.px-lab.com/startuper/wp-content/uploads/sites/2/2015/11/startuper-1-299x347.jpg" alt="头像">
@@ -454,7 +628,7 @@
         <a href="#" download="#">下载pdf简历</a>
     </div>
     <div class="about-me">我是罗婵，应聘前端开发岗位，一年半前端开发经验，工作之余，喜欢去拳馆打拳</div>
-    <section class="part-one">
+    <section class="part-one" id="skills" data-x>
         <div class="section-title">专业技能</div>
         <ol class="pro-list">
             <li>
@@ -495,7 +669,7 @@
             </li>
         </ol>
     </section>
-    <section class="part-two">
+    <section class="part-two" id="works" data-x>
         <div class="section-title">个人作品</div>
         <div style="height: 55px;">
             <ul>
@@ -511,6 +685,88 @@
             <div class="portfolio-3"></div>
         </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.3.0/Tween.js"></script>
+    <script>
+        var mask = document.getElementById('website-mask');
+        var header = document.getElementsByTagName('header');
+        var specialTags = document.querySelectorAll('[data-x]');
+        let liTags = document.getElementsByClassName('menuToggle');
+        let minIndex = 0;
+        setTimeout(function () {
+            mask.classList.remove('active');
+        }, 2000)
+        for(let i=0;i<specialTags.length;i++){
+            console.log(111)
+            specialTags[i].classList.add('offset')
+        }
+        window.onscroll = function () {
+            if (window.scrollY > 0) {
+                header[0].classList.add('sticky');
+            } else {
+                header[0].classList.remove('sticky');
+            }
+            /*滚动时高亮nav*/
+            for (let i = 0; i < specialTags.length; i++) {
+                // console.log(specialTags[i].offsetTop - window.scrollY,'dd',specialTags[minIndex] - window.scrollY)
+                if (Math.abs(specialTags[i].offsetTop - window.scrollY) < Math.abs(specialTags[minIndex].offsetTop - window.scrollY)) {
+                    minIndex = i;
+                }
+            }
+            for (let i = 0; i < specialTags.length; i++) {
+                specialTags[i].classList.remove('active')
+            }
+            // if(minIndex>0){
+                specialTags[minIndex].classList.remove('offset');
+            // }
+            specialTags[minIndex].classList.add('active');
+            let id = specialTags[minIndex].id;
+            let a = document.querySelector('a[href="#' + id + '"]');
+            console.log(id,'ddd','a[hrer="#' + id + '"]')
+            let li = a.parentNode;
+            let brothersAndMe = li.parentNode.children;
+            
+            for(let i=0;i<brothersAndMe.length;i++){
+                brothersAndMe[i].classList.remove('highlight')
+            }
+            li.classList.add('highlight');
+        }
+        setTimeout(function(){
+            window.onscroll()
+        },2000)
+        for (let i = 0; i < liTags.length; i++) {
+            liTags[i].onmouseenter = function (e) {
+                liTags[i].classList.add('active')
+            }
+            liTags[i].onmouseleave = function (e) {
+                liTags[i].classList.remove('active')
+            }
+        }
+        /**锚点跳转**/
+        let aTags = document.querySelectorAll('nav .menuToggle>a');
+        console.log(aTags, 'gg')
+        /**缓动**/
+        function animate(time) {
+            requestAnimationFrame(animate);
+            TWEEN.update(time);
+        }
+        requestAnimationFrame(animate);
+        for (let i = 0; i < aTags.length; i++) {
+            aTags[i].onclick = function (x) {
+                x.preventDefault();
+                let top = document.querySelector(x.currentTarget.getAttribute('href')).offsetTop;
+                let currentTop = window.scrollY;
+                let targetTop = top - 80;
+                let coords = { y: currentTop }
+                var tween = new TWEEN.Tween(coords)
+                    .to({ y: targetTop }, 1000)
+                    .easing(TWEEN.Easing.Quadratic.InOut)
+                    .onUpdate(function () {
+                        window.scrollTo(0, coords.y)
+                    })
+                    .start();
+            }
+        }
+    </script>
 </body>
 
 </html>
